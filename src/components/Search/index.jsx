@@ -1,7 +1,7 @@
 import { EuiComboBox } from "@elastic/eui";
 import React, { useState, useEffect, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import * as A from '../../redux/weather/weather.actions'
+import * as A from "../../redux/weather/weather.actions";
 import "@elastic/eui/dist/eui_theme_light.css";
 
 export default () => {
@@ -11,18 +11,18 @@ export default () => {
   const [selectedOptions, setSelected] = useState([]);
   const [options, setOptions] = useState([]);
 
-  
   const onChange = (selectedOptions) => {
-	if (selectedOptions.length > townsSelected.length) {
-		const lastTown = selectedOptions[selectedOptions.length - 1].id
-		dispatch(A.weatherRequest(lastTown))
-	} else{
-		const deleteTown = townsSelected.filter(town=> !selectedOptions.some(e=> e.id === town.id))
-		const id = deleteTown[0].id
-		dispatch(A.weatherDelete(id))
-	}
+    if (selectedOptions.length > townsSelected.length) {
+      const lastTown = selectedOptions[selectedOptions.length - 1].id;
+      dispatch(A.weatherRequest(lastTown));
+    } else {
+      const deleteTown = townsSelected.filter(
+        (town) => !selectedOptions.some((e) => e.id === town.id)
+      );
+      const id = deleteTown[0].id;
+      dispatch(A.weatherDelete(id));
+    }
 
-	
     setSelected(selectedOptions);
   };
 
@@ -40,7 +40,7 @@ export default () => {
   }, [onSearchChange]);
   return (
     <EuiComboBox
-      placeholder='Busca un municipio'
+      placeholder='Selecciona los municipios'
       async
       options={options}
       selectedOptions={selectedOptions}

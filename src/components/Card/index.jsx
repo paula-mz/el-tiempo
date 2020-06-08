@@ -7,7 +7,6 @@ import {
   EuiText,
   EuiProgress,
   EuiSpacer,
-  rgbToHex,
 } from "@elastic/eui";
 import "@elastic/eui/dist/eui_theme_light.css";
 import "./style.css";
@@ -15,13 +14,14 @@ import "./style.css";
 export default () => {
   const { townsSelected } = useSelector((state) => state.weather);
   if (!townsSelected) return null;
-
   return (
     <div>
       {townsSelected.map((town) => (
         <EuiFlexGroup>
           <EuiFlexItem key={town.id}>
             <EuiCard
+              className='card'
+              display='panel'
               titleElement='span'
               textAlign='center'
               title={town.name}

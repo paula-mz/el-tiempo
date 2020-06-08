@@ -1,10 +1,12 @@
 import React from "react";
+import Logo from "../../assets/img/imago-logo.png";
+import "./style.css";
 
 const Header = (title) => {
   return (
-    <nav>
+    <nav className="navbar">
       <div>
-        <h1>El tiempo en Barcelona</h1>
+        <img className='logo' src={Logo} alt='Weather.BCN' />
       </div>
     </nav>
   );

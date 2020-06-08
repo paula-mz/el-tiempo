@@ -22,7 +22,7 @@ function App() {
 
       {towns.length > 0 && <Search />}
 
-      <Card />
+      <Card className="rounded"/>
     </>
   );
 }

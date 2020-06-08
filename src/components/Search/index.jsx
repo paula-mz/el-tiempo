@@ -40,6 +40,7 @@ export default () => {
   }, [onSearchChange]);
   return (
     <EuiComboBox
+      fullWidth={true}
       placeholder='Selecciona los municipios'
       async
       options={options}

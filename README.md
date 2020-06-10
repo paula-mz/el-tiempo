@@ -16,9 +16,9 @@ https://www.figma.com/file/LFKmmDpZPOZziHyOVmpyZE/Weather.BCN?node-id=0%3A1
 
 ### Tecnología
 
-* Para esta SPA se ha creado una aplicación con React.
-* Se ha utilizado el Framework Elastic UI para su maquetación.
-* La información de las tarjetas y la lista de municipios se extraen mediante una llamada a la API de el-tiempo.net.
+* Para esta SPA se ha creado una aplicación con React (hooks, redux, axios, saga)
+* Se ha utilizado el Framework Elastic UI para su diseño de componentes (Search bar y Cards)
+* La información de las tarjetas y la lista de municipios se extraen mediante una llamada a la API de el-tiempo.net
 
 ### Instalación
 
@@ -33,3 +33,8 @@ Y para correr la aplicación en el navegador:
 ```
 npm start
 ```
+
+### Backlog
+
+* Adaptar mejor el diseño con el framework EUI (descubrir cómo customizar colores, formas, etc)
+* Decodificar carácteres del API/JSON llamado mediante Axios (se ha intentado con: UTF8_encode(), iconv-lite, encodeURIComponent(), etc)

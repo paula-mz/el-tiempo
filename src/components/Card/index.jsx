@@ -17,8 +17,8 @@ export default () => {
   return (
     <div>
       {townsSelected.map((town) => (
-        <EuiFlexGroup>
-          <EuiFlexItem key={town.id}>
+        <EuiFlexGroup key={town.id}>
+          <EuiFlexItem>
             <EuiCard
               className='card'
               display='panel'

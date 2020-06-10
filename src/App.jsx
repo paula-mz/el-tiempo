@@ -14,15 +14,13 @@ function App() {
     if (!towns.length > 0) {
       dispatch(A.townsRequest());
     }
-  }, []);
+  }, [dispatch, towns.length]);
 
   return (
     <>
       <Header title='El tiempo en Barcelona' />
-
       {towns.length > 0 && <Search />}
-
-      <Card className="rounded"/>
+      <Card className='rounded' />
     </>
   );
 }

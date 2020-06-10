@@ -19,7 +19,7 @@ export default createStore(
 );
 
 function* rootSaga() {
-  yield all([townsSaga(),weatherSaga()]);
+  yield all([townsSaga(), weatherSaga()]);
 }
 
 sagaMiddleware.run(rootSaga);

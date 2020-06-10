@@ -26,14 +26,17 @@ export default () => {
     setSelected(selectedOptions);
   };
 
-  const onSearchChange = useCallback((searchValue) => {
-    setOptions([]);
-    setOptions(
-      towns.filter((option) =>
-        option.label.toLowerCase().includes(searchValue.toLowerCase())
-      )
-    );
-  }, []);
+  const onSearchChange = useCallback(
+    (searchValue) => {
+      setOptions([]);
+      setOptions(
+        towns.filter((option) =>
+          option.label.toLowerCase().includes(searchValue.toLowerCase())
+        )
+      );
+    },
+    [towns]
+  );
 
   useEffect(() => {
     onSearchChange("");

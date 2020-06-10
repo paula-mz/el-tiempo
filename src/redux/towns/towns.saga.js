@@ -5,7 +5,7 @@ import * as A from "./towns.actions";
 
 function* townsEffect() {
   try {
-	const response = yield call(api.getTowns);
+    const response = yield call(api.getTowns);
     yield put(A.townsSuccess(response));
   } catch (e) {
     console.error(e);

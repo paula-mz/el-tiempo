@@ -34,7 +34,7 @@ Y para correr la aplicación en el navegador:
 npm start
 ```
 
-### Backlog
+### Dificultades
 
 * Adaptar mejor el diseño con el framework EUI (descubrir cómo customizar colores, formas, etc)
 * Decodificar carácteres del API/JSON llamado mediante Axios (se ha intentado con: UTF8_encode(), iconv-lite, encodeURIComponent(), etc)

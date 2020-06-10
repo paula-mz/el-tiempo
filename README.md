@@ -5,7 +5,7 @@ SPA en la que se puede consultar la temperatura actual y la probabilidad de prec
 
 ### Proceso
 
-* Cración rápida de wireframes y logotipo de la app en Figma:
+* Creación rápida de wireframes y logotipo de la app en Figma:
 https://www.figma.com/file/LFKmmDpZPOZziHyOVmpyZE/Weather.BCN?node-id=0%3A1
 
 * Organizacion de carpetas de la app.
